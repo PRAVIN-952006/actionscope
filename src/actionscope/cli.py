@@ -5,6 +5,8 @@ import json
 import sys
 from pathlib import Path
 
+import yaml
+
 from .analyze import analyze_workflow
 
 
@@ -15,7 +17,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         report = analyze_workflow(args.workflow)
-    except (OSError, TypeError, ValueError) as error:
+    except (OSError, TypeError, ValueError, yaml.YAMLError) as error:
         print(f"actionscope: {error}", file=sys.stderr)
         return 2
     if args.as_json:
