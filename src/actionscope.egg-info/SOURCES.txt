@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/actionscope/__init__.py
+src/actionscope/analyze.py
+src/actionscope/cli.py
+src/actionscope.egg-info/PKG-INFO
+src/actionscope.egg-info/SOURCES.txt
+src/actionscope.egg-info/dependency_links.txt
+src/actionscope.egg-info/entry_points.txt
+src/actionscope.egg-info/requires.txt
+src/actionscope.egg-info/top_level.txt
+tests/test_analyze.py
